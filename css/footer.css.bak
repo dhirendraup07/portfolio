@@ -1,0 +1,235 @@
+/* Professional Footer Styles */
+.footer {
+    background-color: var(--card-bg);
+    padding: 5rem 0 2rem;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+
+.footer-content {
+    position: relative;
+}
+
+.footer-main {
+    margin-bottom: 3rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-info .footer-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), #1d4ed8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.footer-description {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-email, .footer-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-email:hover {
+    color: var(--primary-color);
+}
+
+.footer-email i, .footer-location i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.footer-nav, .research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.3s;
+    position: relative;
+    padding-left: 0;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    color: var(--primary-color);
+    transform: translateX(5px);
+    padding-left: 5px;
+}
+
+.research-list {
+    list-style: none;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.research-list li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.research-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.footer-connect .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-connect .social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform 0.3s;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.footer-connect .social-link:hover {
+    transform: translateX(5px);
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+.footer-connect .social-link i {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.footer-connect .social-link:hover i {
+    transform: scale(1.1);
+}
+
+.footer-connect .linkedin i {
+    background-color: #0077b5;
+}
+
+.footer-connect .github i {
+    background-color: #333;
+}
+
+.footer-connect .researchgate i {
+    background-color: #00ccbb;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    margin: 2rem 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.footer-credits {
+    text-align: right;
+}
+
+.footer-quote {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-credits {
+        text-align: center;
+    }
+
+    .footer-connect .social-links {
+        align-items: center;
+    }
+}
