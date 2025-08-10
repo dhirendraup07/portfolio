@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhirendra Prasad Upadhyay</title>
+    <title>Physics Researcher Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/certifications.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/background.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-3d">
+        <div class="particles"></div>
+    </div>
     <header class="header">
         <nav class="nav-container">
             <div > <span class="logo">DU</span>            
@@ -29,6 +35,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle dark mode">
@@ -123,14 +131,41 @@
                 <h2>Projects</h2>
                 <div class="project-grid">
                     <article class="project-card">
-                        <h3>Lightning Flash Analysis in Nepal</h3>
-                        <p>Comprehensive study of lightning patterns and their impact on local communities in Nepal.</p>
-                        <a href="#" class="project-link">Learn More</a>
+                        <div class="project-card-content">
+                            <div class="project-header">
+                                <h3>NASA Space Apps Challenge 2024 - Team Dharti</h3>
+                                <span class="project-badge">NASA Competition</span>
+                            </div>
+                            <p class="project-description">Interactive Orrery Web App for visualizing Near-Earth Objects (NEOs), developed during NASA's global hackathon. The project aims to make space data accessible through innovative visualization.</p>
+                            <div class="project-tags">
+                                <span class="tag">Space Science</span>
+                                <span class="tag">Earth Observation</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                            <a href="https://dharti-2-0.vercel.app/" class="project-link" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                View Live Project
+                            </a>
+                        </div>
                     </article>
+                    
                     <article class="project-card">
-                        <h3>Hemp Fiber Plasma Treatment</h3>
-                        <p>Investigating the effects of plasma treatment on hemp fiber properties for sustainable materials.</p>
-                        <a href="#" class="project-link">Learn More</a>
+                        <div class="project-card-content">
+                            <div class="project-header">
+                                <h3>Implementation of Shor's Algorithm</h3>
+                                <span class="project-badge">Quantum Computing</span>
+                            </div>
+                            <p class="project-description">Development and implementation of Shor's Algorithm for quantum factorization using IBM Quantum platform. Research focused on optimizing quantum circuits for practical applications in cryptography.</p>
+                            <div class="project-tags">
+                                <span class="tag">Quantum Computing</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-cube"></i>
+                                View Research
+                            </a>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -177,7 +212,7 @@
                     <article class="workshop-card">
                         <div class="workshop-content">
                             <div class="workshop-header">
-                                <h3>Quantum Computing </h3>
+                                <h3>Quantum Computing Certificate</h3>
                                 <span class="workshop-date">2024–25</span>
                             </div>
                             <p class="workshop-description">Successfully completed 2 semesters of advanced quantum computing coursework, covering quantum algorithms, circuit design, and practical applications.</p>
@@ -238,7 +273,7 @@
                         <div class="workshop-content">
                             <div class="workshop-header">
                                 <h3>South Asian Astrophysics Summer School</h3>
-                                <span class="workshop-date">2025</span>
+                                <span class="workshop-date">June 2025</span>
                             </div>
                             <p class="workshop-description">Participated in SAASS 2025, focusing on advanced astrophysics concepts and research methodologies in the South Asian context.</p>
                             <div class="workshop-details">
@@ -249,6 +284,116 @@
                                 <span class="workshop-type">
                                     <i class="fas fa-graduation-cap"></i>
                                     Summer School
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="workshop-card">
+                        <div class="workshop-content">
+                            <div class="workshop-header">
+                                <h3>Advanced Quantum Espresso Training</h3>
+                                <span class="workshop-date">August 2025</span>
+                            </div>
+                            <p class="workshop-description">Successfully completed 30-hour intensive training in Quantum Espresso with hands-on experience in VESTA, XCrySDen, and xmgrace for advanced computational material science simulations.</p>
+                            <div class="workshop-details">
+                                <span class="workshop-location">
+                                    <i class="fas fa-location-dot"></i>
+                                    St. Xavier's College
+                                </span>
+                                <span class="workshop-type">
+                                    <i class="fas fa-atom"></i>
+                                    2 Credits
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="workshop-card">
+                        <div class="workshop-content">
+                            <div class="workshop-header">
+                                <h3>QSilver28 – Quantum Programming Workshop</h3>
+                                <span class="workshop-date">July-August 2025</span>
+                            </div>
+                            <p class="workshop-description">Intermediate-level quantum programming workshop covering complex numbers, quantum states & operators, Bloch Sphere, QFT, Shor's Algorithm, and Quantum AI using Jupyter, Qiskit, and Cirq.</p>
+                            <div class="workshop-details">
+                                <span class="workshop-location">
+                                    <i class="fas fa-globe"></i>
+                                    QNepal & QWorld (Hybrid)
+                                </span>
+                                <span class="workshop-type">
+                                    <i class="fas fa-code"></i>
+                                    Programming Workshop
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Latest Blog Posts</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="assets/quantum-computing.jpg" alt="Quantum Computing Visualization" onerror="this.src='https://via.placeholder.com/400x250'">
+                            <span class="blog-category">Quantum Physics</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-header">
+                                <h3>Understanding Quantum Entanglement</h3>
+                                <span class="blog-date">August 1, 2025</span>
+                            </div>
+                            <p class="blog-excerpt">An in-depth exploration of quantum entanglement and its implications for quantum computing and information theory.</p>
+                            <div class="blog-footer">
+                                <a href="#" class="blog-link">Read More →</a>
+                                <span class="blog-reading-time">
+                                    <i class="fas fa-clock"></i>
+                                    8 min read
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="assets/atmospheric-science.jpg" alt="Lightning Storm" onerror="this.src='https://via.placeholder.com/400x250'">
+                            <span class="blog-category">Atmospheric Physics</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-header">
+                                <h3>Lightning Patterns in the Himalayas</h3>
+                                <span class="blog-date">July 25, 2025</span>
+                            </div>
+                            <p class="blog-excerpt">Analysis of unique lightning patterns observed in the Himalayan region and their correlation with climate change.</p>
+                            <div class="blog-footer">
+                                <a href="#" class="blog-link">Read More →</a>
+                                <span class="blog-reading-time">
+                                    <i class="fas fa-clock"></i>
+                                    6 min read
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="assets/nuclear-physics.jpg" alt="Nuclear Research Facility" onerror="this.src='https://via.placeholder.com/400x250'">
+                            <span class="blog-category">Nuclear Physics</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-header">
+                                <h3>Advances in Nuclear Medicine</h3>
+                                <span class="blog-date">July 15, 2025</span>
+                            </div>
+                            <p class="blog-excerpt">Recent developments in nuclear physics applications for medical imaging and treatment technologies.</p>
+                            <div class="blog-footer">
+                                <a href="#" class="blog-link">Read More →</a>
+                                <span class="blog-reading-time">
+                                    <i class="fas fa-clock"></i>
+                                    10 min read
                                 </span>
                             </div>
                         </div>
@@ -319,8 +464,9 @@
                             <nav class="footer-nav">
                                 <a href="#home">Home</a>
                                 <a href="#about">About</a>
-                                <a href="#projects">Research</a>
+                                <a href="#projects">Projects</a>
                                 <a href="#skills">Skills</a>
+                                <a href="#workshops">Workshops</a>
                                 <a href="#contact">Contact</a>
                             </nav>
                         </div>
@@ -356,6 +502,50 @@
     <button id="scroll-top" aria-label="Scroll to top">↑</button>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/background.js"></script>
+    <script>
+        (function() {
+            // Initialize EmailJS with your public key
+            emailjs.init("wOp7BQj-_FvyeEgX8"); // Public Key from EmailJS account
+        })();
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Show loading state
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Prepare the email parameters
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                to_name: 'Dhirendra P. Upadhyay'
+            };
+
+            // Send the email using EmailJS
+            emailjs.send('service_physics_portfolio', 'template_contact', templateParams)
+                .then(function() {
+                    // Show success message
+                    alert('Thank you! Your message has been sent successfully.');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    // Show error message
+                    alert('Oops! Something went wrong. Please try again later.');
+                    console.error('Email error:', error);
+                })
+                .finally(function() {
+                    // Reset button state
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
